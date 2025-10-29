@@ -13,3 +13,45 @@
   --color-accent-hover: #00e187;
   --color-white: #ffffff;
 }
+
+@layer base {
+  * {
+    font-family: var(--font-jetbrainsMono), ui-monospace, SFMono-Regular, Menlo,
+      Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+  body {
+    background-color: #1c1c22;
+    color: #ffffff;
+    line-height: 1.7;
+  }
+  .h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 600;
+  }
+  @media (min-width: 1280px) {
+    .h1 {
+      font-size: 80px;
+    }
+  }
+  .h2 {
+    font-size: 36px;
+    line-height: 1.1;
+    font-weight: 600;
+  }
+  @media (min-width: 1280px) {
+    .h2 {
+      font-size: 48px;
+    }
+  }
+  .h3 {
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: 600;
+  }
+  @media (min-width: 1280px) {
+    .h3 {
+      font-size: 24px;
+    }
+  }
+}
