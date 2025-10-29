@@ -1,3 +1,5 @@
+"use client";
+
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
@@ -38,8 +40,16 @@ const Home = () => {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = "/Yassir CV FR.pdf";
+                  link.download = "Yassir CV FR.pdf";
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
               >
-                <span>Download CV</span>
+                <span>Télécharger le CV</span>
                 <FiDownload className="text-xl" />
               </Button>
               <Social
