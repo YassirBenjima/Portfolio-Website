@@ -54,4 +54,13 @@
       font-size: 24px;
     }
   }
+  .text-outline {
+    -webkit-text-stroke: 2px #ffffff;
+    color: transparent;
+  }
+
+  .text-outline-hover {
+    -webkit-text-stroke: 2px #00ff99;
+    color: #00ff99;
+  }
 }
